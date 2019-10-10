@@ -102,7 +102,7 @@ class ProgressiveManager extends Manager {
   constructor(first_name, last_name, email, age, reports = [], title = 'Not a manager', bonus = 0) {
     super(first_name, last_name, email, age, reports = [])
     
-    this.hire =  function(employee){
+    this.hire = function(employee){
       this.reports.push(employee)
       this.updateTitle()
     };
@@ -132,10 +132,11 @@ class ProgressiveManager extends Manager {
       this.title = 'Bestest Manager'
     }
   }
-  
-  fireBonus () {
-    this.bonus += 100;
-  }
+
+  // fireBonus () {
+  //   this.bonus += 100;
+  // }
+  // needs to be called inside the fire function
 }
 
 
